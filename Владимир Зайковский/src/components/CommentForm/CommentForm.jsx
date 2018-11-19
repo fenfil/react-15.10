@@ -21,7 +21,7 @@ export default class CommentForm extends Component {
     this.setState({message: ''});
   }
 
-  handleChange = (e) => {
+  handleChange = (event) => {
     this.setState({
       [event.target.name]: event.target.value
     });

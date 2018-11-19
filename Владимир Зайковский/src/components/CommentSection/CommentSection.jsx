@@ -12,7 +12,6 @@ export default class CommentSection extends Component {
   }
 
   addComment = (comment) => {
-    console.log(comment);
     this.setState(old => ({
       ...old,
       comments: this.state.comments.concat(comment)
