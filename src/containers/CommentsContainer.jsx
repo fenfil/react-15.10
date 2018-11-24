@@ -21,6 +21,7 @@ export default class CommentsContainer extends Component {
       .then((comments) => {
         this.setState({
           loading: false,
+          page: this.state.page
           comments: this.state.comments.concat(comments),
         })
       })
